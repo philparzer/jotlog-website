@@ -1,9 +1,10 @@
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Atkinson_Hyperlegible } from 'next/font/google'
+import Nav from '@/components/Nav'
 
-const inter = Inter({ subsets: ['latin'] })
+const atkinson = Atkinson_Hyperlegible({weight: "400", subsets: ["latin-ext"]})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${atkinson.className} bg-[#F9FCF7]`}>
+        <Nav/>
         {children}
         <Analytics />
       </body>
