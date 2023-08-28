@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         grape: "#E27FE4"
       },
+      boxShadow: {
+        nav: "0px 4px 4px 0px rgba(248, 228, 255, 0.25)",
+      }
     },
   },
   plugins: [],
