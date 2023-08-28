@@ -11,7 +11,7 @@ export default function Home() {
             for movers
           </h1>
           <div className="hidden lg:block">
-            <div className="w-[214px] h-[433px] absolute lg:rotate-[15deg] -translate-x-[12vw] -translate-y-[80px]">
+            <div className="w-[214px] h-[433px] absolute lg:rotate-[15deg] -translate-x-[12vw] -translate-y-[40px]">
               <Image
                 alt="iphone frame"
                 className="object-contain"

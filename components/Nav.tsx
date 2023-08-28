@@ -7,7 +7,7 @@ import {
 
 export default function Nav() {
   return (
-    <nav className="w-full lg:w-auto lg:border lg:border-[#f8e4ff40] lg:shadow-nav px-[5vw] lg:mx-[25vw] lg:bg-white mt-[20px] py-[20px] rounded-full flex justify-between lg:justify-normal items-center lg:px-[25px] text-sm">
+    <nav className="w-full lg:w-auto lg:border lg:border-[#f8e4ff40] lg:shadow-nav px-[5vw] lg:mx-[25vw] lg:bg-white mt-[20px] py-[16px] rounded-full flex justify-between lg:justify-normal items-center lg:px-[40px] text-sm">
       <Link className="text-base" href="/">
         jotlog
       </Link>
@@ -25,7 +25,7 @@ export default function Nav() {
           github
         </a>
       </div>
-      <div className="flex items-center gap-4 ">
+      <div className="flex items-center gap-4">
         <a
           href="https://twitter.com/jotlog_app"
           rel="noopener noreferrer"
