@@ -7,7 +7,7 @@ import {
 
 export default function Nav() {
   return (
-    <nav className="w-full lg:w-auto lg:border lg:border-[#f8e4ff40] lg:shadow-nav px-[5vw] lg:mx-[25vw] lg:bg-white mt-[20px] py-[16px] rounded-full flex justify-between lg:justify-normal items-center lg:px-[40px] text-sm">
+    <nav className="top-[20px] z-10 sticky w-full nav lg:w-auto lg:border lg:border-[#f8e4ff40] lg:shadow-nav px-[5vw] lg:mx-[25vw] lg:bg-white py-[16px] rounded-full flex justify-between lg:justify-normal items-center lg:px-[40px] text-sm">
       <Link className="text-base" href="/">
         jotlog
       </Link>

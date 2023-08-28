@@ -1,9 +1,10 @@
+import ContentBlock from "@/components/ContentBlock";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="mt-[80px] lg:mt-[170px]">
-      <section className="">
+    <main className="mt-[80px] lg:mt-[200px]">
+      <section className="min-h-[80vh]">
         <div className="flex w-full justify-between px-[5vw] lg:px-[25vw]">
           <h1 className="text-[45px] lg:text-[60px] leading-[119%] mb-8 lg:mb-5">
             notes
@@ -102,6 +103,101 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="flex flex-col gap-56">
+        <ContentBlock
+          title="just jot it down"
+          tags={[
+            <div className="flex">
+              <h3 className="p-5 bg-white flex items-center rounded-md ">
+                instant <br /> startup
+              </h3>
+            </div>,
+          ]}
+          bulletpoints={[
+            "6 times faster startup than other apps",
+            "1 tap on the icon, start typing",
+            "hit send, close the app, and get back to work",
+          ]}
+          asset={
+            <div className="flex gap-4 relative">
+              <div className="relative w-[119px] h-[242px]">
+                <div className="w-full h-full absolute">
+                  <Image
+                    alt="iphone frame"
+                    className="object-contain"
+                    src="/iphone-frame.webp"
+                    fill
+                  ></Image>
+                  <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
+                    <div className="bg-white w-full"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative w-[119px] h-[242px]">
+                <div className="w-full h-full absolute">
+                  <Image
+                    alt="iphone frame"
+                    className="object-contain"
+                    src="/iphone-frame.webp"
+                    fill
+                  ></Image>
+                  <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
+                    <div className="bg-white w-full"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative w-[119px] h-[242px]">
+                <div className="w-full h-full absolute">
+                  <Image
+                    alt="iphone frame"
+                    className="object-contain"
+                    src="/iphone-frame.webp"
+                    fill
+                  ></Image>
+                  <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
+                    <div className="bg-white w-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          }
+          subline="sometimes the best ideas come in the most inconvenient moments"
+        ></ContentBlock>
+        <ContentBlock
+          title="just jot it down"
+          tags={[
+            <div className="flex">
+              <h3 className="p-5 bg-white flex items-center rounded-md ">
+                instant <br /> startup
+              </h3>
+            </div>,
+          ]}
+          bulletpoints={[
+            "6 times faster startup than other apps",
+            "1 tap on the icon, start typing",
+            "hit send, close the app, and get back to work",
+          ]}
+          asset={<div className="bg-red-200 w-20 h-20"></div>}
+          subline="sometimes the best ideas come in the most inconvenient moments"
+        ></ContentBlock>
+        <ContentBlock
+          title="just jot it down"
+          tags={[
+            <div className="flex">
+              <h3 className="p-5 bg-white flex items-center rounded-md ">
+                instant <br /> startup
+              </h3>
+            </div>,
+          ]}
+          bulletpoints={[
+            "6 times faster startup than other apps",
+            "1 tap on the icon, start typing",
+            "hit send, close the app, and get back to work",
+          ]}
+          asset={<div className="bg-red-200 w-20 h-20"></div>}
+          subline="sometimes the best ideas come in the most inconvenient moments"
+        ></ContentBlock>
+      </div>
     </main>
   );
 }
