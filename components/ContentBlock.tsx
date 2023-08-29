@@ -1,6 +1,6 @@
 interface Props {
   title: string;
-  bulletpoints: string[];
+  bulletpoints: (string | React.ReactNode)[];
   tags: React.ReactNode[];
   asset: React.ReactNode;
   subline: string;
@@ -14,9 +14,9 @@ export default function ContentBlock({
   subline,
 }: Props) {
   return (
-    <section className="flex gap-32 items-center">
+    <section className="flex gap-32 items-center ">
       <div>
-        <ul className="ml-[24vw] mb-4">
+        <ul className="ml-[24vw] mb-4 flex gap-2">
           {tags.map((tag, i) => (
             <li key={i}>{tag}</li>
           ))}
@@ -26,14 +26,14 @@ export default function ContentBlock({
           <h2 className="text-[30px] leading-[119%]">{title}</h2>
         </div>
         <ul className="ml-[25vw] flex flex-col gap-2 mt-[16px]">
-          {bulletpoints.map((bulletpoint) => (
-            <li key={bulletpoint}>{bulletpoint}</li>
+          {bulletpoints.map((bulletpoint, i) => (
+            <li key={i}>{bulletpoint}</li>
           ))}
         </ul>
       </div>
-      <div className="py-32 mt-20 flex flex-col items-center gap-4">
+      <div className="py-32 mt-36 flex flex-col items-center gap-4">
         <div>{asset}</div>
-        <p>{subline}</p>
+        <p className="opacity-50 text-sm">{subline}</p>
       </div>
     </section>
   );

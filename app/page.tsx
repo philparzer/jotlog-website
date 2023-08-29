@@ -1,4 +1,6 @@
 import ContentBlock from "@/components/ContentBlock";
+import Phone from "@/components/Phone";
+import Tag from "@/components/Tag";
 import Image from "next/image";
 
 export default function Home() {
@@ -31,26 +33,22 @@ export default function Home() {
           <div>
             <div className="flex lg:hidden flex-col gap-2">
               <div className="flex ">
-                <div className="flex">
-                  <h3 className="p-5 bg-white h-full w-full flex items-center rounded-md ">
-                    instant <br /> startup
-                  </h3>
-                </div>
+                <Tag
+                  titleNode={
+                    <span>
+                      instant
+                      <br />
+                      startup
+                    </span>
+                  }
+                />
                 <div className="flex flex-wrap gap-2">
-                  <div className="col-span-2 flex w-full">
-                    <h3 className="p-2 px-4 bg-white rounded-full ">
-                      own your data
-                    </h3>
-                  </div>
-                  <div className="flex">
-                    <h3 className="p-2 px-4 bg-white rounded-full">
-                      open source
-                    </h3>
-                  </div>
+                  <Tag titleString="own your data" />
+                  <Tag titleString="open source" />
                 </div>
               </div>
               <div className="flex w-full justify-between">
-                <h3 className="p-2 px-4 bg-white rounded-full">open source</h3>
+                <Tag titleString="open source" />
                 <div className="relative grow mt-7 ml-7">
                   <div className="w-[214px] h-[433px] absolute lg:rotate-[15deg] lg:-translate-x-[12vw] lg:-translate-y-[80px]">
                     <Image
@@ -65,53 +63,51 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex ">
-                <h3 className="p-2 px-4 bg-white rounded-full">
-                  offline first
-                </h3>
-              </div>
+              <Tag titleString="offline first" />
             </div>
 
             <div className="hidden lg:flex gap-2 flex-wrap">
-              <div className="flex">
-                <h3 className="p-5 bg-white h-full w-full flex items-center rounded-md ">
-                  instant <br /> startup
-                </h3>
-              </div>
+            <Tag
+                  titleNode={
+                    <span>
+                      instant
+                      <br />
+                      startup
+                    </span>
+                  }
+                />
               <div className="flex flex-wrap gap-2">
                 <div className="col-span-2 flex w-full">
-                  <h3 className="p-2 px-4 bg-white rounded-full ">
-                    own your data
-                  </h3>
+                <Tag titleString="own your data" />
                 </div>
                 <div className="flex">
-                  <h3 className="p-2 px-4 bg-white rounded-full">
-                    open source
-                  </h3>
+                <Tag titleString="open source" />
                 </div>
                 <div className="flex">
-                  <h3 className="p-2 px-4 bg-white rounded-full">
-                    offline first
-                  </h3>
+                <Tag titleString="offline first" />
                 </div>
                 <div></div>
               </div>
               <div className="flex w-full">
-                <h3 className="p-2 px-4 bg-white rounded-full">100% free</h3>
+              <Tag titleString="100% free" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div className="flex flex-col gap-56">
+      <div className="flex flex-col gap-">
         <ContentBlock
           title="just jot it down"
           tags={[
-            <div className="flex">
-              <h3 className="p-5 bg-white flex items-center rounded-md ">
-                instant <br /> startup
-              </h3>
-            </div>,
+            <Tag
+              titleNode={
+                <span>
+                  instant
+                  <br />
+                  startup
+                </span>
+              }
+            />,
           ]}
           bulletpoints={[
             "6 times faster startup than other apps",
@@ -119,83 +115,52 @@ export default function Home() {
             "hit send, close the app, and get back to work",
           ]}
           asset={
-            <div className="flex gap-4 relative">
-              <div className="relative w-[119px] h-[242px]">
-                <div className="w-full h-full absolute">
-                  <Image
-                    alt="iphone frame"
-                    className="object-contain"
-                    src="/iphone-frame.webp"
-                    fill
-                  ></Image>
-                  <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
-                    <div className="bg-white w-full"></div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative w-[119px] h-[242px]">
-                <div className="w-full h-full absolute">
-                  <Image
-                    alt="iphone frame"
-                    className="object-contain"
-                    src="/iphone-frame.webp"
-                    fill
-                  ></Image>
-                  <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
-                    <div className="bg-white w-full"></div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative w-[119px] h-[242px]">
-                <div className="w-full h-full absolute">
-                  <Image
-                    alt="iphone frame"
-                    className="object-contain"
-                    src="/iphone-frame.webp"
-                    fill
-                  ></Image>
-                  <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
-                    <div className="bg-white w-full"></div>
-                  </div>
-                </div>
-              </div>
+            <div className="flex   gap-4 relative">
+              <Phone />
+              <Phone />
+              <Phone />
             </div>
           }
           subline="sometimes the best ideas come in the most inconvenient moments"
         ></ContentBlock>
         <ContentBlock
-          title="just jot it down"
+          title="you've got mail"
           tags={[
-            <div className="flex">
-              <h3 className="p-5 bg-white flex items-center rounded-md ">
-                instant <br /> startup
-              </h3>
-            </div>,
+            <Tag titleString="offline first" />,
+            <Tag titleString="own your data" />,
           ]}
           bulletpoints={[
-            "6 times faster startup than other apps",
-            "1 tap on the icon, start typing",
-            "hit send, close the app, and get back to work",
+            "jotlog never connects to the internet",
+            "export your notes to your email inbox",
           ]}
-          asset={<div className="bg-red-200 w-20 h-20"></div>}
-          subline="sometimes the best ideas come in the most inconvenient moments"
+          asset={
+            <div className="flex gap-4 relative items-center">
+              <Phone />
+              <div className="bg-red-200 w-[290px] h-[217px]"></div>
+            </div>
+          }
+          subline="your notes stay with you, on your phone or in your inbox"
         ></ContentBlock>
+
         <ContentBlock
-          title="just jot it down"
+          title="safe, open, and free"
           tags={[
-            <div className="flex">
-              <h3 className="p-5 bg-white flex items-center rounded-md ">
-                instant <br /> startup
-              </h3>
-            </div>,
+            <Tag titleString="open source" />,
+            <Tag titleString="100% free" />,
           ]}
           bulletpoints={[
-            "6 times faster startup than other apps",
-            "1 tap on the icon, start typing",
-            "hit send, close the app, and get back to work",
+            "jotlog is open-source, and free as in free beer",
+            <a
+              href="https://github.com/sponsors/philparzer"
+              className="underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              consider sponsoring if you like my work
+            </a>,
           ]}
-          asset={<div className="bg-red-200 w-20 h-20"></div>}
-          subline="sometimes the best ideas come in the most inconvenient moments"
+          asset={<div className="bg-red-200 w-[25vw] aspect-video"></div>}
+          subline="fork the code, make it your own, or contribute to the project"
         ></ContentBlock>
       </div>
     </main>
