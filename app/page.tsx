@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="mt-[80px] lg:mt-[200px]">
-      <section className="min-h-[80vh]">
+    <main className="mt-[80px] lg:mt-[200px] 2xl:mt-[300px] overflow-hidden">
+      <section className="min-h-[110vh] lg:min-h-[60vh]">
         <div className="flex w-full justify-between px-[5vw] lg:px-[25vw]">
           <h1 className="text-[45px] lg:text-[60px] leading-[119%] mb-8 lg:mb-5">
             notes
@@ -14,7 +14,7 @@ export default function Home() {
             for movers
           </h1>
           <div className="hidden lg:block">
-            <div className="w-[214px] h-[433px] absolute lg:rotate-[15deg] -translate-x-[12vw] -translate-y-[40px]">
+            <div className="w-[183px] h-[371px] lg:w-[214px] lg:h-[433px] absolute lg:rotate-[15deg] -translate-x-[12vw] -translate-y-[40px]">
               <Image
                 alt="iphone frame"
                 className="object-contain"
@@ -43,14 +43,18 @@ export default function Home() {
                   }
                 />
                 <div className="flex flex-wrap gap-2">
+                  <div className="w-full">
                   <Tag titleString="own your data" />
+                  </div>
+                  <div>
                   <Tag titleString="open source" />
+                  </div>
                 </div>
               </div>
               <div className="flex w-full justify-between">
                 <Tag titleString="open source" />
-                <div className="relative grow mt-7 ml-7">
-                  <div className="w-[214px] h-[433px] absolute lg:rotate-[15deg] lg:-translate-x-[12vw] lg:-translate-y-[80px]">
+                <div className="relative grow mt-3 ml-3">
+                  <div className="w-[183px] h-[371px] absolute lg:rotate-[15deg] lg:-translate-x-[12vw] lg:-translate-y-[80px]">
                     <Image
                       alt="iphone frame"
                       className="object-contain"
@@ -95,7 +99,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="flex flex-col gap-">
+      <div className="flex flex-col gap-40 lg:gap-0">
         <ContentBlock
           title="just jot it down"
           tags={[
@@ -115,7 +119,7 @@ export default function Home() {
             "hit send, close the app, and get back to work",
           ]}
           asset={
-            <div className="flex   gap-4 relative">
+            <div className="flex gap-4 relative">
               <Phone />
               <Phone />
               <Phone />
@@ -136,7 +140,7 @@ export default function Home() {
           asset={
             <div className="flex gap-4 relative items-center">
               <Phone />
-              <div className="bg-red-200 w-[290px] h-[217px]"></div>
+              <div className="bg-red-200 aspect-video w-[50vw] lg:w-[290px] lg:h-[217px]"></div>
             </div>
           }
           subline="your notes stay with you, on your phone or in your inbox"
@@ -159,7 +163,7 @@ export default function Home() {
               consider sponsoring if you like my work
             </a>,
           ]}
-          asset={<div className="bg-red-200 w-[25vw] aspect-video"></div>}
+          asset={<div className="bg-red-200 w-[75vw] lg:w-[25vw] aspect-video"></div>}
           subline="fork the code, make it your own, or contribute to the project"
         ></ContentBlock>
       </div>

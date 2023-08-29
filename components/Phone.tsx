@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Phone () {
     return (
-        <div className="relative w-[119px] h-[242px]">
+        <div className="relative w-[81px] h-[164px] lg:w-[119px] lg:h-[242px]">
                 <div className="w-full h-full absolute">
                   <Image
                     alt="iphone frame"
