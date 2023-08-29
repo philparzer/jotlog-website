@@ -8,7 +8,7 @@ export default function Footer() {
                 <li>X {"(Twitter)"}</li>
                 <li>Producthunt</li>
             </ul>
-            <p className="mt-10">this site doesn't track you {":)"}</p>
+            <p className="mt-10">this site doesn&apos;t track you {":)"}</p>
 
         </footer>
     )

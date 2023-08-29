@@ -99,7 +99,7 @@ export default function Home() {
         <ContentBlock
           title="just jot it down"
           tags={[
-            <Tag
+            <Tag key={0}
               titleNode={
                 <span>
                   instant
@@ -126,8 +126,8 @@ export default function Home() {
         <ContentBlock
           title="you've got mail"
           tags={[
-            <Tag titleString="offline first" />,
-            <Tag titleString="own your data" />,
+            <Tag key={0} titleString="offline first" />,
+            <Tag key={1} titleString="own your data" />,
           ]}
           bulletpoints={[
             "jotlog never connects to the internet",
@@ -145,12 +145,12 @@ export default function Home() {
         <ContentBlock
           title="safe, open, and free"
           tags={[
-            <Tag titleString="open source" />,
-            <Tag titleString="100% free" />,
+            <Tag key={0} titleString="open source" />,
+            <Tag key={1} titleString="100% free" />,
           ]}
           bulletpoints={[
             "jotlog is open-source, and free as in free beer",
-            <a
+            <a key={0}
               href="https://github.com/sponsors/philparzer"
               className="underline"
               rel="noopener noreferrer"
