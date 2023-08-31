@@ -31,7 +31,7 @@ export default function ContentBlock({
           ))}
         </ul>
       </div>
-      <div className="mt-16 px-[5vw] lg:py-32 lg:mt-36 flex flex-col lg:items-center gap-4">
+      <div className="mt-16 px-[7vw] lg:px-0 lg:py-32 lg:mt-36 flex flex-col lg:items-center gap-4">
         <div>{asset}</div>
         <p className="opacity-50 text-sm max-w-[60vw] lg:max-w-none lg:text-center">{subline}</p>
       </div>

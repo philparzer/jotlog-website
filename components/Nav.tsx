@@ -7,7 +7,7 @@ import {
 
 export default function Nav() {
   return (
-    <nav className="top-0 lg:top-[20px] dark:shadow-md rounded-none dark:bg-vanta lg:rounded-full z-10 bg-offwhite sticky w-[100vw] nav lg:w-auto lg:border lg:border-[#f8e4ff40] lg:dark:border-dim px-[5vw] lg:mx-[25vw] lg:bg-white lg:dark:bg-dim  py-[16px] flex justify-between lg:justify-normal items-center lg:px-[40px] text-sm">
+    <nav className="top-0 lg:top-[20px] rounded-none dark:bg-vanta lg:rounded-full z-10 bg-offwhite sticky w-[100vw] nav lg:w-auto lg:border lg:border-[#f8e4ff40] lg:dark:border-dim px-[5vw] lg:mx-[25vw] lg:bg-white lg:dark:bg-dim  py-[16px] flex justify-between lg:justify-normal items-center lg:px-[40px] text-sm">
       <Link className="text-base hover:text-grape" href="/">
         jotlog
       </Link>

@@ -141,7 +141,7 @@ export default function Home() {
           asset={
             <div className="flex gap-4 relative items-center">
               <Phone />
-              <div className="bg-slate-300 aspect-video w-[50vw] lg:w-[290px] lg:h-[217px]"></div>
+              <div className="bg-slate-300 aspect-[4/3] w-[50vw] lg:w-[290px] lg:h-[217px]"></div>
             </div>
           }
           subline="your notes stay with you, on your phone or in your inbox"
@@ -164,7 +164,7 @@ export default function Home() {
               consider sponsoring if you like my work
             </a>,
           ]}
-          asset={<div className="bg-slate-300 w-[75vw] lg:w-[25vw] aspect-video"></div>}
+          asset={<div className="bg-slate-300 w-[75vw] lg:w-[25vw] max-w-[500px] aspect-[4/3]"></div>}
           subline="fork the code, make it your own, or contribute to the project"
         ></ContentBlock>
       </div>
