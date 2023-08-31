@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="mt-[80px] lg:mt-[200px] 2xl:mt-[300px] overflow-hidden">
-      <section className="min-h-[110vh] lg:min-h-[60vh]">
+      <section className="min-h-[700px] lg:min-h-[60vh]">
         <div className="flex w-full justify-between px-[5vw] lg:px-[25vw]">
           <h1 className="text-[45px] lg:text-[60px] leading-[119%] mb-8 lg:mb-5">
             notes
@@ -28,7 +28,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex items-center">
+        <div className="flex items-center ">
           <div className="w-[5vw] lg:w-[23vw] h-[3px] bg-grape mr-[2vw] mb-20 lg:mb-10"></div>
           <div>
             <div className="flex lg:hidden flex-col gap-2">
@@ -42,7 +42,7 @@ export default function Home() {
                     </span>
                   }
                 />
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 pl-2">
                   <div className="w-full">
                   <Tag titleString="own your data" />
                   </div>
@@ -61,10 +61,11 @@ export default function Home() {
                       src="/iphone-frame.webp"
                       fill
                     ></Image>
+                    <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
+                      <div className="bg-white w-full"></div>
+                    </div>
                   </div>
-                  <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
-                    <div className="bg-white w-full"></div>
-                  </div>
+                  
                 </div>
               </div>
               <Tag titleString="offline first" />
@@ -140,7 +141,7 @@ export default function Home() {
           asset={
             <div className="flex gap-4 relative items-center">
               <Phone />
-              <div className="bg-red-200 aspect-video w-[50vw] lg:w-[290px] lg:h-[217px]"></div>
+              <div className="bg-slate-300 aspect-video w-[50vw] lg:w-[290px] lg:h-[217px]"></div>
             </div>
           }
           subline="your notes stay with you, on your phone or in your inbox"
@@ -156,14 +157,14 @@ export default function Home() {
             "jotlog is open-source, and free as in free beer",
             <a key={0}
               href="https://github.com/sponsors/philparzer"
-              className="underline"
+              className="underline hover:text-grape"
               rel="noopener noreferrer"
               target="_blank"
             >
               consider sponsoring if you like my work
             </a>,
           ]}
-          asset={<div className="bg-red-200 w-[75vw] lg:w-[25vw] aspect-video"></div>}
+          asset={<div className="bg-slate-300 w-[75vw] lg:w-[25vw] aspect-video"></div>}
           subline="fork the code, make it your own, or contribute to the project"
         ></ContentBlock>
       </div>

@@ -19,13 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${atkinson.className} bg-[#F9FCF7] selection:bg-grape selection:text-white`}>
+      <body className={`${atkinson.className} bg-offwhite text-vanta dark:text-offwhite selection:bg-grape dark:bg-vanta selection:text-white`}>
         <Nav/>
         {children}
-        <Analytics />
+        <Analytics/>
         <Footer/>
       </body>
-      
     </html>
   )
 }

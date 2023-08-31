@@ -14,9 +14,9 @@ export default function Tag({
   return (
     <div className="flex">
       {titleString ? (
-        <h3 className="p-2 px-4 bg-white rounded-full">{titleString}</h3>
+        <h3 className="p-2 px-4 bg-white dark:bg-dim rounded-full">{titleString}</h3>
       ) : (
-        <h3 className="p-5 bg-white flex items-center rounded-md ">
+        <h3 className="p-5 bg-white dark:bg-dim flex items-center rounded-md ">
           {titleNode}
         </h3>
       )}

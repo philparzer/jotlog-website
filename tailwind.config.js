@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -17,7 +16,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        grape: "#E27FE4",
+        "grape": "#E27FE4",
+        "dim": "#5B505C",
+        "vanta": "#2E2A2D",
+        "offwhite": "#F3F3F3",
+        "danger": "#FA2E2E",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
