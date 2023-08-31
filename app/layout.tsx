@@ -9,7 +9,7 @@ const atkinson = Atkinson_Hyperlegible({weight: "400", subsets: ["latin-ext"]})
 
 export const metadata: Metadata = {
   title: 'jotlog · notes for movers',
-  description: 'blazingly fast, privacy focused, and always offline note-taking app',
+  description: 'blazingly fast, privacy focused, open-source, and always offline note-taking app',
 }
 
 export default function RootLayout({
