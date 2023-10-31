@@ -7,42 +7,22 @@ import {
 
 export default function Nav() {
   return (
-    <nav className="top-0 lg:top-[20px] rounded-none dark:bg-vanta lg:rounded-full z-10 bg-offwhite sticky w-[100vw] nav lg:w-auto lg:border lg:border-[#f8e4ff40] lg:dark:border-dim px-[5vw] lg:mx-[25vw] lg:bg-white lg:dark:bg-dim  py-[16px] flex justify-between lg:justify-normal items-center lg:px-[40px] text-sm">
-      <Link className="text-base hover:text-grape" href="/">
-        jotlog
+    <nav className="pl-[2vw] top-[20px] text-[18px] sticky flex items-center z-50 ">
+      <div className="flex items-center dark:bg-dim py-3 rounded-full gap-10 px-5">
+      <Link className=" hover:text-grape" href="/">
+        <span className="text-grape font-extrabold">— </span>jotlog
       </Link>
-      <div className="hidden lg:flex grow gap-6 justify-center">
-        <a
-          className="hover:text-grape"
-          href="https://twitter.com/jotlog_app"
-          rel="noopener noreferrer"
-        >
-          x {"(twitter)"}
-        </a>
-        <a
-          className="hover:text-grape"
-          href="https://www.producthunt.com/"
-          rel="noopener noreferrer"
-        >
-          producthunt
-        </a>
-        <a
-          className="hover:text-grape"
-          href="https://github.com/philparzer/jotlog"
-          rel="noopener noreferrer"
-        >
-          github
-        </a>
-      </div>
-      <div className="flex items-center gap-4">
+     
+      <div className="flex items-center gap-4 ">
         <a
           href="https://twitter.com/jotlog_app"
           rel="noopener noreferrer"
-          className="text-base px-[13px] py-[6px] bg-grape text-white rounded-md"
+          className="text-[18px] px-4 rounded-full  bg-grape  text-white py-1.5"
         >
           download
         </a>
-        <div className="lg:hidden h-full flex items-center">
+        
+        <div className=" h-full flex items-center">
           <Popover>
             <PopoverTrigger>
               <div>
@@ -87,6 +67,7 @@ export default function Nav() {
             </PopoverContent>
           </Popover>
         </div>
+      </div>
       </div>
     </nav>
   );
