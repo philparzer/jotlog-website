@@ -6,7 +6,7 @@ interface PhoneProps {
 
 export default function Phone ({children}: PhoneProps) {
     return (
-        <div className="relative w-[81px] h-[164px] lg:w-[119px] z-10 lg:h-[242px]">
+        <div className="relative w-[81px] h-[164px] lg:w-[119px] z-10 lg:h-[242px] hover:scale-150 transition-transform hover:z-50">
                 <div className="w-full h-full absolute">
                   <Image
                     alt="iphone frame"

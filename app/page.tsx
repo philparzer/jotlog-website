@@ -161,7 +161,7 @@ export default function Home() {
                <Phone>
           <LazyVideo src="backup.mp4" height={99.5} restartAfter={10}/>
         </Phone>
-              <div className="bg-slate-300 aspect-[4/3] w-[50vw] lg:w-[290px] lg:h-[217px] relative overflow-hidden rounded-[8px]">
+              <div className="bg-slate-300 aspect-[4/3] w-[50vw] lg:w-[290px] lg:h-[217px] relative overflow-hidden rounded-[8px] hover:scale-150 transition-transform hover:z-40">
               <Image src="/email-client.png" className="object-cover h-full w-full"  width={974} height={712} alt="email client with backed up note"/>
               </div>
             </div>
@@ -188,7 +188,7 @@ export default function Home() {
             </a>,
           ]}
           asset={
-            <div className="bg-slate-300 w-[75vw] lg:w-[25vw] max-w-[500px] aspect-[4/3] relative rounded-xl overflow-hidden">
+            <div className="bg-slate-300 w-[75vw] lg:w-[25vw] max-w-[500px] aspect-[4/3] relative rounded-xl overflow-hidden hover:scale-150 transition-transform hover:z-40">
                <Image src="/github.png" className="object-cover h-full w-full"  width={974} height={712} alt="github repo"/>
             </div>
           }
