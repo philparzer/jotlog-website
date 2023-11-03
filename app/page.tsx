@@ -1,5 +1,7 @@
 import ContentBlock from "@/components/ContentBlock";
+import LazyVideo from "@/components/LazyVideo";
 import Phone from "@/components/Phone";
+import SpeedComparison from "@/components/SpeedComparison";
 import Tag from "@/components/Tag";
 import Image from "next/image";
 
@@ -23,9 +25,14 @@ export default function Home() {
               ></Image>
               <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
                 <div className="bg-white w-full">
-                  <video className=" w-full h-[98.5%]" src="header.mp4" autoPlay playsInline muted>
-
-                  </video>
+                  <video
+                    className=" w-full h-[98.5%]"
+                    src="header.mp4"
+                    autoPlay
+                    loop
+                    playsInline
+                    muted
+                  ></video>
                 </div>
               </div>
             </div>
@@ -48,10 +55,10 @@ export default function Home() {
                 />
                 <div className="flex flex-wrap gap-2 pl-2">
                   <div className="w-full">
-                  <Tag titleString="own your data" />
+                    <Tag titleString="own your data" />
                   </div>
                   <div>
-                  <Tag titleString="open source" />
+                    <Tag titleString="open source" />
                   </div>
                 </div>
               </div>
@@ -67,42 +74,46 @@ export default function Home() {
                     ></Image>
                     <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
                       <div className="bg-white w-full">
-                      <video className=" w-full h-[98.5%]" src="header.mp4" autoPlay playsInline muted>
-          
-          </video>
+                        <video
+                          className=" w-full h-[98.5%]"
+                          src="header.mp4"
+                          autoPlay
+                          loop
+                          playsInline
+                          muted
+                        ></video>
                       </div>
                     </div>
                   </div>
-                  
                 </div>
               </div>
               <Tag titleString="offline first" />
             </div>
 
             <div className="hidden lg:flex gap-2 flex-wrap">
-            <Tag
-                  titleNode={
-                    <span>
-                      instant
-                      <br />
-                      startup
-                    </span>
-                  }
-                />
+              <Tag
+                titleNode={
+                  <span>
+                    instant
+                    <br />
+                    startup
+                  </span>
+                }
+              />
               <div className="flex flex-wrap gap-2">
                 <div className="col-span-2 flex w-full">
-                <Tag titleString="own your data" />
+                  <Tag titleString="own your data" />
                 </div>
                 <div className="flex">
-                <Tag titleString="open source" />
+                  <Tag titleString="open source" />
                 </div>
                 <div className="flex">
-                <Tag titleString="offline first" />
+                  <Tag titleString="offline first" />
                 </div>
                 <div></div>
               </div>
               <div className="flex w-full">
-              <Tag titleString="100% free" />
+                <Tag titleString="100% free" />
               </div>
             </div>
           </div>
@@ -112,7 +123,8 @@ export default function Home() {
         <ContentBlock
           title="just jot it down"
           tags={[
-            <Tag key={0}
+            <Tag
+              key={0}
               titleNode={
                 <span>
                   instant
@@ -123,15 +135,13 @@ export default function Home() {
             />,
           ]}
           bulletpoints={[
-            "6 times faster startup than other apps",
+            "significantly  rfaster startup than other apps",
             "1 tap on the icon, start typing",
             "hit send, close the app, and get back to work",
           ]}
           asset={
             <div className="flex gap-4 relative">
-              <Phone />
-              <Phone />
-              <Phone />
+              <SpeedComparison />
             </div>
           }
           subline="sometimes the best ideas come in the most inconvenient moments"
@@ -148,8 +158,12 @@ export default function Home() {
           ]}
           asset={
             <div className="flex gap-4 relative items-center">
-              <Phone />
-              <div className="bg-slate-300 aspect-[4/3] w-[50vw] lg:w-[290px] lg:h-[217px]"></div>
+               <Phone>
+          <LazyVideo src="backup.mp4" height={99.5} restartAfter={10}/>
+        </Phone>
+              <div className="bg-slate-300 aspect-[4/3] w-[50vw] lg:w-[290px] lg:h-[217px] relative overflow-hidden rounded-[8px]">
+              <Image src="/email-client.png" className="object-cover h-full w-full"  width={974} height={712} alt="email client with backed up note"/>
+              </div>
             </div>
           }
           subline="your notes stay with you, on your phone or in your inbox"
@@ -163,7 +177,8 @@ export default function Home() {
           ]}
           bulletpoints={[
             "jotlog is open-source, and free as in free beer",
-            <a key={0}
+            <a
+              key={0}
               href="https://github.com/sponsors/philparzer"
               className="underline hover:text-grape"
               rel="noopener noreferrer"
@@ -172,7 +187,11 @@ export default function Home() {
               consider sponsoring if you like my work
             </a>,
           ]}
-          asset={<div className="bg-slate-300 w-[75vw] lg:w-[25vw] max-w-[500px] aspect-[4/3]"></div>}
+          asset={
+            <div className="bg-slate-300 w-[75vw] lg:w-[25vw] max-w-[500px] aspect-[4/3] relative rounded-xl overflow-hidden">
+               <Image src="/github.png" className="object-cover h-full w-full"  width={974} height={712} alt="github repo"/>
+            </div>
+          }
           subline="fork the code, make it your own, or contribute to the project"
         ></ContentBlock>
       </div>

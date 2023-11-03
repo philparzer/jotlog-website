@@ -24,7 +24,7 @@ export default function Nav() {
 
           <div className=" h-full flex items-center">
             <Popover>
-              <PopoverTrigger>
+              <PopoverTrigger title="show social links">
                 <div>
                   <svg
                     width="25"
