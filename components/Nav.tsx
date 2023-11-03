@@ -17,9 +17,9 @@ export default function Nav() {
         <div className="flex items-center gap-4 relative">
           <button
             disabled
-            className={`text-[18px] relative px-4 rounded-xl  bg-vanta bg-opacity-25  text-white py-1.5`}
+            className={`text-[18px] relative px-3 rounded-[8px]  bg-vanta bg-opacity-25  text-white py-0.5 pb-1`}
           >
-            <span className="text-[18px]">coming soon</span>
+            <span className="text-[14px]">coming soon</span>
           </button>
 
           <div className=" h-full flex items-center">

@@ -22,7 +22,11 @@ export default function Home() {
                 fill
               ></Image>
               <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
-                <div className="bg-white w-full"></div>
+                <div className="bg-white w-full">
+                  <video className=" w-full h-[98.5%]" src="header.mp4" autoPlay playsInline muted>
+
+                  </video>
+                </div>
               </div>
             </div>
           </div>
@@ -62,7 +66,11 @@ export default function Home() {
                       fill
                     ></Image>
                     <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
-                      <div className="bg-white w-full"></div>
+                      <div className="bg-white w-full">
+                      <video className=" w-full h-[98.5%]" src="header.mp4" autoPlay playsInline muted>
+          
+          </video>
+                      </div>
                     </div>
                   </div>
                   
