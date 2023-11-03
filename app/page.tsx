@@ -15,18 +15,18 @@ export default function Home() {
             <br />
             for movers
           </h1>
-          <div className="hidden lg:block">
-            <div className="w-[183px] h-[371px] lg:w-[214px] lg:h-[433px] absolute lg:rotate-[15deg] -translate-x-[12vw] -translate-y-[40px]">
+          <div className="hidden lg:inline-block">
+            <div className="w-[183px] h-[371px] lg:w-[214px] lg:h-[433px] absolute lg:rotate-[15deg] -translate-x-[12vw] 2xl:-translate-x-[18vw] -translate-y-[40px]">
               <Image
                 alt="iphone frame"
-                className="object-contain"
+                className="object-contain  animate-float z-10"
                 src="/iphone-frame.webp"
                 fill
               ></Image>
-              <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden">
+              <div className="w-full h-full flex px-[2%] py-[2%] rounded-[20%] overflow-hidden  animate-float ">
                 <div className="bg-white w-full">
                   <video
-                    className=" w-full h-[98.5%]"
+                    className=" w-full h-[98.5%] "
                     src="header.mp4"
                     autoPlay
                     loop

@@ -73,13 +73,20 @@ module.exports = {
         "wiggle": {
           '0%, 100%': { transform: 'rotate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
-        }
+        },
+        float: {
+          '0%': { transform: 'translateY(0) translateX(0) rotateZ(0)' },
+          '50%': { transform: 'translateY(-10px) translateX(-5px) rotateZ(-5deg)' },
+          '100%': { transform: 'translateY(0) translateX(0) rotateZ(0)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "wiggle": 'wiggle 0.2s ease-in-out 3',
+        float: 'float 8s ease-in-out infinite',
       },
+
     },
   },
   plugins: [require("tailwindcss-animate")],
