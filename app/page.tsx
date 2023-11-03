@@ -9,7 +9,7 @@ export default function Home() {
       <section className="min-h-[700px] lg:min-h-[60vh]">
         <div className="flex w-full justify-between px-[5vw] lg:px-[25vw]">
           <h1 className="text-[45px] lg:text-[60px] leading-[119%] mb-8 lg:mb-5">
-            notes
+            <span>notes</span>
             <br />
             for movers
           </h1>

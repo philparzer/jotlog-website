@@ -8,7 +8,7 @@ import {
 export default function Nav() {
   return (
     <nav className="pl-[2vw] top-[20px] text-[18px] sticky flex items-center z-50 ">
-      <div className="flex items-center dark:bg-dim py-3 rounded-full gap-10 px-5">
+      <div className="flex items-center dark:bg-dim bg-white py-3 rounded-full gap-10 px-5">
       <Link className=" hover:text-grape" href="/">
         <span className="text-grape font-extrabold">— </span>jotlog
       </Link>
