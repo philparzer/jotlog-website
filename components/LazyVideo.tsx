@@ -8,9 +8,10 @@ interface LazyVideoProps {
     src: string;
     height?: number;
     restartAfter?: number;
+    loop?: boolean;
 }
 
-export default function LazyVideo ({src, height, restartAfter}: LazyVideoProps) {
+export default function LazyVideo ({src, height, restartAfter, loop}: LazyVideoProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const lockRef = useRef(false)
     const vidRef = useRef<HTMLVideoElement>(null)
@@ -37,6 +38,7 @@ export default function LazyVideo ({src, height, restartAfter}: LazyVideoProps) 
         autoPlay
         playsInline
         muted
+        loop={loop}
         ></video>
       )}
     </div>

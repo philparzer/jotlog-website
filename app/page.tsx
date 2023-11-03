@@ -159,7 +159,7 @@ export default function Home() {
           asset={
             <div className="flex gap-4 relative items-center">
                <Phone>
-          <LazyVideo src="backup.mp4" height={99.5} restartAfter={10}/>
+          <LazyVideo src="backup.mp4" height={99.5} loop/>
         </Phone>
               <div className="bg-slate-300 aspect-[4/3] w-[50vw] lg:w-[290px] lg:h-[217px] relative overflow-hidden rounded-[8px] hover:scale-150 transition-transform hover:z-40">
               <Image src="/email-client.png" className="object-cover h-full w-full"  width={974} height={712} alt="email client with backed up note"/>
