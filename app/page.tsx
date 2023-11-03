@@ -135,7 +135,7 @@ export default function Home() {
             />,
           ]}
           bulletpoints={[
-            "significantly  rfaster startup than other apps",
+            "significantly  faster startup than other apps",
             "1 tap on the icon, start typing",
             "hit send, close the app, and get back to work",
           ]}
@@ -184,7 +184,7 @@ export default function Home() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              consider sponsoring if you like my work
+              consider sponsoring if you like the app
             </a>,
           ]}
           asset={
