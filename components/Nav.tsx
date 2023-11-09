@@ -50,14 +50,14 @@ export default function Nav() {
                     x {"(twitter)"}
                   </a>
                   <a
-                    className="hover:text-grape"
+                    className="hover:text-grape pointer-events-none opacity-20"
                     href="https://www.producthunt.com/"
                     rel="noopener noreferrer"
                   >
                     producthunt
                   </a>
                   <a
-                    className="hover:text-grape"
+                    className="hover:text-grap pointer-events-none opacity-20"
                     href="https://github.com/philparzer/jotlog"
                     rel="noopener noreferrer"
                   >

@@ -158,11 +158,17 @@ export default function Home() {
           ]}
           asset={
             <div className="flex gap-4 relative items-center">
-               <Phone>
-          <LazyVideo src="backup.mp4" height={99.5} loop/>
-        </Phone>
+              <Phone>
+                <LazyVideo src="backup.mp4" height={99.5} loop />
+              </Phone>
               <div className="bg-slate-300 aspect-[4/3] w-[50vw] lg:w-[290px] lg:h-[217px] relative overflow-hidden rounded-[8px] hover:scale-150 transition-transform hover:z-40">
-              <Image src="/email-client.png" className="object-cover h-full w-full"  width={974} height={712} alt="email client with backed up note"/>
+                <Image
+                  src="/email-client.png"
+                  className="object-cover h-full w-full"
+                  width={974}
+                  height={712}
+                  alt="email client with backed up note"
+                />
               </div>
             </div>
           }
@@ -176,7 +182,7 @@ export default function Home() {
             <Tag key={1} titleString="100% free" />,
           ]}
           bulletpoints={[
-            "jotlog is open-source, and free as in free beer",
+            <span className="relative">jotlog is open source <span className="text-xs opacity-50">repo coming soon</span></span>,
             <a
               key={0}
               href="https://github.com/sponsors/philparzer"
@@ -184,12 +190,19 @@ export default function Home() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              consider sponsoring if you like the app
+              consider sponsoring, if you like the app
+              
             </a>,
           ]}
           asset={
             <div className="bg-slate-300 w-[75vw] lg:w-[25vw] max-w-[500px] aspect-[4/3] relative rounded-xl overflow-hidden hover:scale-150 transition-transform hover:z-40">
-               <Image src="/github.png" className="object-cover h-full w-full"  width={974} height={712} alt="github repo"/>
+              <Image
+                src="/github.png"
+                className="object-cover h-full w-full"
+                width={974}
+                height={712}
+                alt="github repo"
+              />
             </div>
           }
           subline="fork the code, make it your own, or contribute to the project"
