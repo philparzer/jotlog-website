@@ -182,7 +182,7 @@ export default function Home() {
             <Tag key={1} titleString="100% free" />,
           ]}
           bulletpoints={[
-            <span className="relative">jotlog is open source <span className="text-xs opacity-50">repo coming soon</span></span>,
+            <span key={1} className="relative">jotlog is open source <span className="text-xs opacity-50">repo coming soon</span></span>,
             <a
               key={0}
               href="https://github.com/sponsors/philparzer"
@@ -192,10 +192,10 @@ export default function Home() {
             >
               consider sponsoring, if you like the app
               
-            </a>,
+            </a>
           ]}
           asset={
-            <div className="bg-slate-300 w-[75vw] lg:w-[25vw] max-w-[500px] aspect-[4/3] relative rounded-xl overflow-hidden hover:scale-150 transition-transform hover:z-40">
+            <div key={2} className="bg-slate-300 w-[75vw] lg:w-[25vw] max-w-[500px] aspect-[4/3] relative rounded-xl overflow-hidden hover:scale-150 transition-transform hover:z-40">
               <Image
                 src="/github.png"
                 className="object-cover h-full w-full"
