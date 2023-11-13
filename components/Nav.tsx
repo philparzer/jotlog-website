@@ -4,6 +4,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import DownloadButton from "./DownloadButton";
 
 export default function Nav() {
   return (
@@ -15,12 +16,7 @@ export default function Nav() {
         </Link>
 
         <div className="flex items-center gap-4 relative">
-          <button
-            disabled
-            className={`text-[18px] relative px-3 rounded-[8px]  bg-vanta bg-opacity-25  text-white py-0.5 pb-1`}
-          >
-            <span className="text-[14px]">coming soon</span>
-          </button>
+         <DownloadButton />
 
           <div className=" h-full flex items-center relative z-50">
             <Popover>

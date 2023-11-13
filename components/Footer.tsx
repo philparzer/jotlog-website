@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="mt-[200px] px-[5vw] flex flex-col items-center  lg:items-end lg:flex-row lg:justify-between pt-20 pb-10 lg:px-[25vw] bg-dim  text-offwhite relative">
@@ -13,8 +15,8 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a className="hover:text-grape pointer-events-none flex items-center gap-2 " href="https://github.com">
-          <span className="opacity-50">Google Play</span> <span className="text-[12px] text-grape opacity-100">{"waiting for approval"}</span>
+          <a className="hover:text-grape flex items-center gap-2 " href="https://play.google.com/store/apps/details?id=com.philparzer.jotlog">
+          <span className="underline">Google Play</span>
           </a>
         </li>
         <li>
@@ -28,9 +30,14 @@ export default function Footer() {
           </a>
         </li>
       </ul>
+      <div className="flex flex-col items-center">
+    
+      
       <p className="mt-10 lg:mt-0 opacity-50 text-xs">
         this site doesn&apos;t track you {":)"}
       </p>
+      <Link href="/privacy" className="underline hover:grape" >Privacy Policy</Link>
+      </div>
       <a className="flex gap-2 items-center translate-y-2" href="https://adlerlagune.com">
         by{" "}
         <img
