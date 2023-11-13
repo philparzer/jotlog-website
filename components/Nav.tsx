@@ -9,7 +9,7 @@ import DownloadButton from "./DownloadButton";
 export default function Nav() {
   return (
     <>
-    <nav className="px-[2vw] top-[20px] text-[18px] sticky flex items-center z-50 justify-between">
+    <nav className="px-[2vw] top-[20px] text-[18px] sticky flex items-center z-50 lg:justify-between flex-wrap">
       <div className="flex items-center dark:bg-dim bg-white py-3 rounded-full gap-10 px-5 relative">
         <Link className=" hover:text-grape" href="/">
           <span className="text-grape font-extrabold">— </span>jotlog
@@ -46,8 +46,8 @@ export default function Nav() {
                     x {"(twitter)"}
                   </a>
                   <a
-                    className="hover:text-grape pointer-events-none opacity-20"
-                    href="https://www.producthunt.com/"
+                    className="hover:text-grape underline"
+                    href="https://www.producthunt.com/posts/jotlog"
                     rel="noopener noreferrer"
                   >
                     producthunt
@@ -65,7 +65,7 @@ export default function Nav() {
           </div>
         </div>
       </div>
-     
+             <a href="https://www.producthunt.com/posts/jotlog?utm_source=badge-featured&utm_medium=badge&theme=dark&utm_souce=badge-jotlog" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=425051&theme=light" alt="jotlog - fast&#0044;&#0032;privacy&#0032;focused&#0044;&#0032;and&#0032;always&#0032;offline&#0032;notes | Product Hunt" className="w-[180px] hidden lg:flex lg:w-[210px]"  /></a>
     </nav>
      
       </>

@@ -3,7 +3,9 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="mt-[200px] px-[5vw] flex flex-col items-center  lg:items-end lg:flex-row lg:justify-between pt-20 pb-10 lg:px-[25vw] bg-dim  text-offwhite relative">
-      <ul className=" text-center lg:text-left flex flex-col gap-2">
+                   <a href="https://www.producthunt.com/posts/jotlog?utm_source=badge-featured&utm_medium=badge&theme=dark&utm_souce=badge-jotlog" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=425051&theme=light" alt="jotlog - fast&#0044;&#0032;privacy&#0032;focused&#0044;&#0032;and&#0032;always&#0032;offline&#0032;notes | Product Hunt" className="w-[180px] mb-10 lg:hidden lg:w-[210px]"  /></a>
+
+      <ul className=" text-center lg:text-left flex flex-col gap-2 items-center">
       <li>
           <a className="hover:text-grape flex  items-center gap-2" href="https://github.com/philparzer/jotlog">
           <span className="underline">Github</span>
@@ -25,8 +27,8 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a className="hover:text-grape flex pointer-events-none items-center gap-2" href="https://github.com">
-          <span className="opacity-50">Product Hunt</span> <span className="text-[12px] text-grape opacity-100">{"coming soon"}</span>
+          <a className="hover:text-grape flex pointer-events-none items-center gap-2" href="https://www.producthunt.com/posts/jotlog">
+          <span className="underline">Product Hunt</span>
           </a>
         </li>
       </ul>
