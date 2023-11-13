@@ -22,7 +22,7 @@ export default function Nav() {
             <span className="text-[14px]">coming soon</span>
           </button>
 
-          <div className=" h-full flex items-center">
+          <div className=" h-full flex items-center relative z-50">
             <Popover>
               <PopoverTrigger title="show social links">
                 <div>
@@ -41,9 +41,9 @@ export default function Nav() {
                 </div>
               </PopoverTrigger>
               <PopoverContent>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 ">
                   <a
-                    className="hover:text-grape"
+                    className="hover:text-grape underline"
                     href="https://twitter.com/jotlog_app"
                     rel="noopener noreferrer"
                   >
@@ -57,7 +57,7 @@ export default function Nav() {
                     producthunt
                   </a>
                   <a
-                    className="hover:text-grap pointer-events-none opacity-20"
+                    className="hover:text-grape underline"
                     href="https://github.com/philparzer/jotlog"
                     rel="noopener noreferrer"
                   >

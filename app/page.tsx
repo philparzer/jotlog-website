@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="mt-[80px] lg:mt-[200px] 2xl:mt-[300px] overflow-hidden">
+    <main className="mt-[80px] lg:mt-[200px] 2xl:mt-[250px] overflow-hidden">
       <section className="min-h-[700px] lg:min-h-[60vh]">
         <div className="flex w-full justify-between px-[5vw] lg:px-[25vw]">
           <h1 className="text-[45px] lg:text-[60px] leading-[119%] mb-8 lg:mb-5">
@@ -63,7 +63,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex w-full justify-between">
-                <Tag titleString="open source" />
+                <Tag titleString="100% free" />
                 <div className="relative grow mt-3 ml-3">
                   <div className="w-[183px] h-[371px] absolute lg:rotate-[15deg] lg:-translate-x-[12vw] lg:-translate-y-[80px]">
                     <Image
@@ -182,7 +182,7 @@ export default function Home() {
             <Tag key={1} titleString="100% free" />,
           ]}
           bulletpoints={[
-            <span key={1} className="relative">jotlog is open source <span className="text-xs opacity-50">repo coming soon</span></span>,
+            <span key={1} className="relative">jotlog is <a className="underline hover:text-grape" href="https://github.com/philparzer/jotlog" target="_blank" rel="noopener noreferrer">open source</a></span>,
             <a
               key={0}
               href="https://github.com/sponsors/philparzer"
@@ -190,7 +190,7 @@ export default function Home() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              consider sponsoring, if you like the app
+              consider sponsoring
               
             </a>
           ]}

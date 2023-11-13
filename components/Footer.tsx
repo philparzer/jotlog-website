@@ -3,13 +3,13 @@ export default function Footer() {
     <footer className="mt-[200px] px-[5vw] flex flex-col items-center  lg:items-end lg:flex-row lg:justify-between pt-20 pb-10 lg:px-[25vw] bg-dim  text-offwhite relative">
       <ul className=" text-center lg:text-left flex flex-col gap-2">
       <li>
-          <a className="hover:text-grape flex pointer-events-none items-center gap-2" href="https://github.com">
-          <span className="opacity-50">Github</span> <span className="text-[12px] text-grape opacity-100">{"coming soon"}</span>
+          <a className="hover:text-grape flex  items-center gap-2" href="https://github.com/philparzer/jotlog">
+          <span className="underline">Github</span>
           </a>
         </li>
         <li>
-          <a className="hover:text-grape flex pointer-events-none items-center gap-2" href="https://github.com">
-          <span className="opacity-50">App Store</span> <span className="text-[12px] text-grape opacity-100">{"waiting for approval"}</span>
+          <a className="hover:text-grape flex items-center gap-2" href="https://apps.apple.com/app/jotlog/id6471736582?l=en-GB">
+          <span className="underline">App Store</span> 
           </a>
         </li>
         <li>
