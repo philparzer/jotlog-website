@@ -7,7 +7,7 @@ const Page = ({}: PageProps) => {
         <h1 className="text-[30px] leading-[119%]">Privacy</h1>
         <div>
           The jotlog mobile application
-          (hereinafter referred to as the &ldquo;Service&ldquo;) is operated by Philipp Parzer and adlerlagune [hereinafter referred to as &ldquo;us&ldquo;, &ldquo;our&ldquo;, &ldquo;we&ldquo;]. This page informs you of
+          (hereinafter referred to as the &ldquo;Service&ldquo;) is operated by Philipp Parzer and adlerlagune OG [hereinafter referred to as &ldquo;us&ldquo;, &ldquo;our&ldquo;, &ldquo;we&ldquo;]. This page informs you of
           our policies regarding the collection, use, and disclosure of personal
           data when you use our Service and the choices you have associated with
           that data.

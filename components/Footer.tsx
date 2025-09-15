@@ -40,14 +40,9 @@ export default function Footer() {
       </p>
       <Link href="/privacy" className="underline hover:grape" >Privacy Policy</Link>
       </div>
-      <a className="flex gap-2 items-center translate-y-2" href="https://adlerlagune.com">
+      <a className="flex gap-2 items-center translate-y-2" href="https://adler.studio">
         by{" "}
-        <img
-          src="/100p.webp"
-          alt="adlerlagune logo"
-          className="relative inline h-[35px] w-[35px] -translate-y-1 "
-        />
-        with love
+        adler.studio
       </a>
     </footer>
   );
